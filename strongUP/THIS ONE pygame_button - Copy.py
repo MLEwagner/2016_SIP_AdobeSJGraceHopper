@@ -3,8 +3,6 @@ import pygame
 
 pygame.init()
 
-#BLAHCBADCLIEUDCLASIUCUSDLCUAIL
-#fliuvuilwsvuiliwrulluiv
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -237,7 +235,7 @@ while running:
         screen.blit(label, (30, 292))
         text1 = font2.render('''Rory looks at you funny. "What's wrong? Why are you''', True, WHITE)
         text10 = font2.render('''so jittery?''', True, WHITE)
-        text2 = font4.render("Is it that obvious?", True, WHITE)
+        text2 = font4.render("Is it that obvious?", True, RED)
         text3 = font4.render("I can't lie to her and say it's nothing.", True, RED)
         text4 = font4.render("Then she'll be really offended.", True, RED)
         text5 = font4.render("She'll be annoyed by my complaints.", True, RED)
@@ -247,14 +245,14 @@ while running:
         text9 = font4.render("towards them.", True, BLUE)
         screen.blit(text1, (25, 30))
         screen.blit(text10,(25, 55))
-        screen.blit(text6, (25, 145))
-        screen.blit(text7, (25, 170))
-        screen.blit(text8, (25, 195))
-        screen.blit(text9, (25, 220))
-        #screen.blit(text2, (
-        #screen.blit(text3, (    
-        #screen.blit(text4, (
-        #screen.blit(text5, (
+        screen.blit(text6, (25, 100))
+        screen.blit(text7, (25, 125))
+        screen.blit(text8, (25, 150))
+        screen.blit(text9, (25, 175))
+        screen.blit(text2, (100, 224))
+        screen.blit(text3, (235, 294))    
+        screen.blit(text4, (275, 330))
+        screen.blit(text5, (70, 410))
         pygame.display.flip()
         
     screen.fill(BLACK)
@@ -271,7 +269,7 @@ while running:
         drawrect(170,280)
         label=myfont.render("Next", False, WHITE)
         screen.blit(label, (30, 292))
-        text1 = font2.render('''I'm going to fail my calculus quiz next period."''', True, WHITE)
+        text1 = font2.render('''"I'm going to fail my calculus quiz next period."''', True, WHITE)
         text2 = font2.render("You mumble. You dig through your backpack for your", True, WHITE)
         text3 = font2.render("notes to do some last-minute review.", True, WHITE)
         text4 = font2.render('Jordan rolls his eyes. "Not this again."', True, WHITE)
