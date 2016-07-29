@@ -363,11 +363,11 @@ while running:
         text7 = font4.render("and their worries. Don't try to change who they are.", True, BLUE)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
-        screen.blit(text5, (25, 115))
-        screen.blit(text6, (25, 140))
-        screen.blit(text7, (25, 165))
-        screen.blit(text4, (223, 251)) 
-        screen.blit(text3, (147, 367))
+        screen.blit(text5, (25, 170))
+        screen.blit(text6, (25, 195))
+        screen.blit(text7, (25, 220))
+        #screen.blit(text3, (
+        #screen.blit(text4, (
         pygame.display.flip()
 
     # === IMPORTANT ========= RUNNER GAME GOES HERE =================
@@ -412,13 +412,13 @@ while running:
         text1 = font2.render("You've just been with Rory so far, but now she's", True, WHITE)
         text2 = font2.render("going to the bathroom, leaving you by yourself.", True, WHITE)
         text5 = font2.render("You move to the corner as you wait for Rory.", True, WHITE)
-        text3 = font4.render("I don't want to stand out.", True, WHITE)
-        text4 = font4.render("They'll think I'm a loser.", True, WHITE)
+        text3 = font4.render("I don't want to stand out.", True, RED)
+        text4 = font4.render("They'll think I'm a loser.", True, RED)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text5, (25, 80))
-        screen.blit(text3, (300,250))
-        screen.blit(text4, (300,350))
+        # screen.blit(text3, (
+        # screen.blit(text4, (
         pygame.display.flip()
 
     screen.fill(BLACK)
@@ -445,8 +445,8 @@ while running:
         text1 = font2.render("Someone walks up to you and greets you. She seems", True, WHITE)
         text2 = font2.render("friendly. You start to feel flustered.", True, WHITE)
         text3 = font2.render("Do you...", True, WHITE)
-        text4 = font4.render("She's just talking to me because she pities me.", True, WHITE)
-        text5 = font4.render("What if I accidentally offend her?", True, WHITE)
+        text4 = font4.render("She's just talking to me because she pities me.", True, RED)
+        text5 = font4.render("What if I accidentally offend her?", True, RED)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
@@ -474,7 +474,14 @@ while running:
         text1 = font2.render("Even though you're nervous about talking to the", True, WHITE)
         text2 = font2.render("stranger, the two of you talk, and even find some", True, WHITE)
         text3 = font2.render("common interests.", True, WHITE)
-        text4 = font4.render("
+        text4 = font4.render("People with social anxiety are unreasonably or", True, BLUE)
+        text5 = font4.render("excessively afraid of being judged or criticized.", True, BLUE)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        screen.blit(text3, (25, 80))
+        #screen.blit(text4,
+        #screen.blit(text5
+        pygame.display.update()
         
         
         
