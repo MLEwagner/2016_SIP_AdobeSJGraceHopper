@@ -445,6 +445,7 @@ while running:
         text1 = font2.render("Someone walks up to you and greets you. She seems", True, WHITE)
         text2 = font2.render("friendly. You start to feel flustered.", True, WHITE)
         text3 = font2.render("Do you...", True, WHITE)
+        #text4 = font4.
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
