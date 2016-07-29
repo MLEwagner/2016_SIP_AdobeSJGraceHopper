@@ -366,7 +366,7 @@ while running:
         screen.blit(text5, (25, 170))
         screen.blit(text6, (25, 195))
         screen.blit(text7, (25, 220))
-        #screen.blit(text3, (
+        #screen.blit(text3, (1
         #screen.blit(text4, (
         pygame.display.flip()
 
