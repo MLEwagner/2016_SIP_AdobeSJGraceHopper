@@ -281,10 +281,10 @@ while running:
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
         screen.blit(text4, (25, 105))
-        screen.blit(text5, (40, 398))
-        screen.blit(text6, (70, 210))
-        screen.blit(text7, (210, 340))
-        screen.blit(text8, (265, 270))
+        #screen.blit(text5, (
+        #screen.blit(text6, (
+        #screen.blit(text7, (
+        #screen.blit(text8, (
         pygame.display.flip()
 
     screen.fill(BLACK)
@@ -302,7 +302,7 @@ while running:
         label=myfont.render("Next", False, WHITE)
         screen.blit(label, (30, 292))
         #text1 = font2.render("ENCOURAGEMENT FROM RORY", True, WHITE)
-        #text2 = font4.render("TIPS", True, BLUE)
+        #text2 = font4.render("TIPS", True, WHITE)
         #screen.blit(text1, (25, 30))
         #screen.blit(text2, (25,
         pygame.display.flip()
@@ -325,18 +325,18 @@ while running:
         text2 = font2.render("Your mind goes blank as you read the sheet. You feel", True, WHITE)
         text3 = font2.render("extremely nervous.", True, WHITE)
         text4 = font4.render("I know all this but still can't do it.", True, RED)
-        text5 = font4.render("I didn't study enough.", True, RED)
+        text5 = font4.render("I didn't study enough,", True, RED)
         text6 = font4.render("Students with generalized anxiety tend to be perfectionists", True, BLUE)
         text7 = font4.render("and spend excessive time studying. It's important to provide", True, BLUE)
         text8 = font4.render("comfort and reassurance about their performance.", True, BLUE)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
-        screen.blit(text6, (25, 125))
-        screen.blit(text7, (25, 150))
-        screen.blit(text8, (25, 175))
-        screen.blit(text4, (205,380))
-        screen.blit(text5, (370,280))
+        screen.blit(text6, (25, 195))
+        screen.blit(text7, (25, 220))
+        screen.blit(text8, (25, 245))
+        #screen.blit(text3, (
+        #screen.blit(text4, (
         pygame.display.flip()
 
 
@@ -431,11 +431,11 @@ while running:
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
             print("You pressed the left mouse button at")
             print(event.pos)
-            part = 1
+            part = 15
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 215 and event.pos[1] > 350 and event.pos[1] < 395:
             print("You pressed the left mouse button at")
             print(event.pos)
-            part = 1
+            part = 16
         drawrect(190, 280)
         drawrect(170, 350)
         label = myfont.render('Say "Hello" back', False, WHITE)
@@ -445,12 +445,36 @@ while running:
         text1 = font2.render("Someone walks up to you and greets you. She seems", True, WHITE)
         text2 = font2.render("friendly. You start to feel flustered.", True, WHITE)
         text3 = font2.render("Do you...", True, WHITE)
-        #text4 = font4.
+        text4 = font4.render("She's just talking to me because she pities me.", True, WHITE)
+        text5 = font4.render("What if I accidentally offend her?", True, WHITE)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
+        #screen.blit(text4,
+        #screen.blit(text5
+        pygame.display.update()
 
-        #ADD THOUGHTS
+    screen.fill(BLACK)
+    
+    #15=8a, 16=8b, 17=8c, 18=8d, 19=9
+    #15->19;  16->17/18;  17->18;  18->19;
+    while part == 15:
+        event = pygame.event.poll()
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 19
+        drawrect(170,280)
+        label = myfont.render("Next", False, WHITE)
+        screen.blit(label, (30, 292))
+        text1 = font2.render("Even though you're nervous about talking to the", True, WHITE)
+        text2 = font2.render("stranger, the two of you talk, and even find some", True, WHITE)
+        text3 = font2.render("common interests.", True, WHITE)
+        text4 = font4.render("
         
         
         
