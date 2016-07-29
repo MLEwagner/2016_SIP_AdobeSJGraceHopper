@@ -281,10 +281,10 @@ while running:
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
         screen.blit(text4, (25, 105))
-        #screen.blit(text5, (
-        #screen.blit(text6, (
-        #screen.blit(text7, (
-        #screen.blit(text8, (
+        screen.blit(text5, (40, 398))
+        screen.blit(text6, (70, 210))
+        screen.blit(text7, (210, 340))
+        screen.blit(text8, (265, 270))
         pygame.display.flip()
 
     screen.fill(BLACK)
