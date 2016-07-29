@@ -363,11 +363,11 @@ while running:
         text7 = font4.render("and their worries. Don't try to change who they are.", True, BLUE)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
-        screen.blit(text5, (25, 170))
-        screen.blit(text6, (25, 195))
-        screen.blit(text7, (25, 220))
-        #screen.blit(text3, (
-        #screen.blit(text4, (
+        screen.blit(text5, (25, 115))
+        screen.blit(text6, (25, 140))
+        screen.blit(text7, (25, 165))
+        screen.blit(text4, (223, 251)) 
+        screen.blit(text3, (147, 367))
         pygame.display.flip()
 
     # === IMPORTANT ========= RUNNER GAME GOES HERE =================
@@ -417,8 +417,8 @@ while running:
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text5, (25, 80))
-        # screen.blit(text3, (
-        # screen.blit(text4, (
+        screen.blit(text3, (300,250))
+        screen.blit(text4, (300,350))
         pygame.display.flip()
 
     screen.fill(BLACK)
