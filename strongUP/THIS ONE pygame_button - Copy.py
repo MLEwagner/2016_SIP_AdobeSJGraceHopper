@@ -302,7 +302,7 @@ while running:
         label=myfont.render("Next", False, WHITE)
         screen.blit(label, (30, 292))
         #text1 = font2.render("ENCOURAGEMENT FROM RORY", True, WHITE)
-        #text2 = font4.render("TIPS", True, WHITE)
+        #text2 = font4.render("TIPS", True, BLUE)
         #screen.blit(text1, (25, 30))
         #screen.blit(text2, (25,
         pygame.display.flip()
@@ -325,18 +325,18 @@ while running:
         text2 = font2.render("Your mind goes blank as you read the sheet. You feel", True, WHITE)
         text3 = font2.render("extremely nervous.", True, WHITE)
         text4 = font4.render("I know all this but still can't do it.", True, RED)
-        text5 = font4.render("I didn't study enough,", True, RED)
+        text5 = font4.render("I didn't study enough.", True, RED)
         text6 = font4.render("Students with generalized anxiety tend to be perfectionists", True, BLUE)
         text7 = font4.render("and spend excessive time studying. It's important to provide", True, BLUE)
         text8 = font4.render("comfort and reassurance about their performance.", True, BLUE)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
-        screen.blit(text6, (25, 195))
-        screen.blit(text7, (25, 220))
-        screen.blit(text8, (25, 245))
-        #screen.blit(text3, (
-        #screen.blit(text4, (
+        screen.blit(text6, (25, 125))
+        screen.blit(text7, (25, 150))
+        screen.blit(text8, (25, 175))
+        screen.blit(text4, (205,380))
+        screen.blit(text5, (370,280))
         pygame.display.flip()
 
 
