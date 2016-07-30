@@ -217,8 +217,8 @@ while running:
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
-        screen.blit(text4, (250, 270)) #REPOSITION
-        screen.blit(text5, (380, 420)) #REPOSITION
+        screen.blit(text4, (250, 260)) #REPOSITION
+        screen.blit(text5, (380, 390)) #REPOSITION
         pygame.display.flip()
 
     screen.fill(BLACK)
@@ -273,7 +273,7 @@ while running:
         screen.blit(label, (30, 292))
         text1 = font2.render('''I'm going to fail my calculus quiz next period."''', True, WHITE)
         text2 = font2.render("You mumble. You dig through your backpack for your", True, WHITE)
-        text3 = font2.render("notes to do somelast-minute review.", True, WHITE)
+        text3 = font2.render("notes to do some last-minute review.", True, WHITE)
         text4 = font2.render('Jordan rolls his eyes. "Not this again."', True, WHITE)
         text5 = font4.render("I knew they wouldn't want to hear.", True, RED)
         text6 = font4.render("I shouldn't have said anything.", True, RED)
@@ -323,9 +323,9 @@ while running:
         drawrect(170,280)
         label=myfont.render("Next", False, WHITE)
         screen.blit(label, (30, 292))
-        text1 = font2.render("You walk into the classroom. The quiz is on your desk.Your", True, WHITE)
-        text2 = font2.render("mind goes blank as you read the sheet. You feel extremely", True, WHITE)
-        text3 = font2.render("nervous.", True, WHITE)
+        text1 = font2.render("You walk into the classroom. The quiz is on your desk.", True, WHITE)
+        text2 = font2.render("Your mind goes blank as you read the sheet. You feel", True, WHITE)
+        text3 = font2.render("extremely nervous.", True, WHITE)
         text4 = font4.render("I know all this but still can't do it.", True, RED)
         text5 = font4.render("I didn't study enough,", True, RED)
         text6 = font4.render("Students with generalized anxiety tend to be perfectionists", True, BLUE)
@@ -374,7 +374,22 @@ while running:
         #screen.blit(text3, (
         #screen.blit(text4, (
         pygame.display.flip()
-        
+
+    screen.fill(BLACK)
+
+    while part == 12: #Jordan leaves them. 
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 12
+        drawrect(170,280)
+        label=myfont.render("Next", False, WHITE)
+        screen.blit(label, (30, 292))
+        #text1 =font2.render("Jordan disappears into the crowd as soon as you arrive")
 
     screen.fill(BLACK)
     pygame.display.flip()
