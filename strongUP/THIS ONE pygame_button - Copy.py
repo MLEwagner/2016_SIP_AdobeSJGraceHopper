@@ -6,7 +6,7 @@ pygame.init()
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
-RED = (255, 108,112)
+RED = (255, 108, 112)
 GREEN = (0, 255, 0)
 BLUE = (170, 208, 255)
  
@@ -383,11 +383,17 @@ while running:
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
             print("You pressed the left mouse button at")
             print(event.pos)
-            part = 12
+            part = 13
         drawrect(170,280)
-        label=myfont.render("Next", False, WHITE)
+        label = myfont.render("Next", False, WHITE)
         screen.blit(label, (30, 292))
-        #text1 =font2.render("Jordan disappears into the crowd as soon as you arrive")
+        text1 = font2.render("Jordan disappears into the crowd as soon as you arrive", True, WHITE)
+        # IF you have any advice feel free to add it, Becca
+        text2 = font2.render("I knew he didn't want to be around me...", True, RED)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        
+        
 
     screen.fill(BLACK)
     pygame.display.flip()
