@@ -175,9 +175,9 @@ while running:
         text2 = font2.render("friends.", True, WHITE)
         text3 = font4.render("It's normal for people with generalized anxiety to worry", True, BLUE)
         text4 = font4.render("about things that seem mundane.", True, BLUE)
-        text5 = font4.render("Are they avoiding me?", True, RED)
+        text5 = font4.render("Do they think I'm weird for being alone?", True, RED) #SIZE?
         text6 = font4.render("They don't really want to be my friend.", True, RED)
-        text7 = font4.render("Everyone's judging me now.", True, RED)
+        text7 = font4.render("Maybe they're mad at me.", True, RED)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 100))
@@ -208,13 +208,15 @@ while running:
         label=myfont.render("Tell them how worried you are",False,WHITE)
         screen.blit(label, (30, 362))
         text1 = font2.render("Eventually, it's brunch. You finally see your friends.", True, WHITE)
-        text2 = font2.render("Your quiz is next period, and you're starting to", True, WHITE)
-        text3 = font2.render("freak out. Do you...", True, WHITE)
+        text2 = font2.render("You consider asking them about this morning, but you don't", True, WHITE)
+        text3 = font2.render("want to seem clingy. Your quiz is next period, and you're", True, WHITE)
+        text6 = font2.render("starting to freak out. Do you...", True, WHITE)
         text4 = font4.render("If I tell them they'll be annoyed.", True, RED)
         text5 = font4.render("I am so unprepared.", True, RED)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
+        screen.blit(text6, (25, 105))
         screen.blit(text4, (250, 260)) #REPOSITION
         screen.blit(text5, (380, 390)) #REPOSITION
         pygame.display.flip()
@@ -237,22 +239,23 @@ while running:
         text10 = font2.render('''so jittery?''', True, WHITE)
         text2 = font4.render("Is it that obvious?", True, RED)
         text3 = font4.render("I can't lie to her and say it's nothing.", True, RED)
-        text4 = font4.render("Then she'll be really offended.", True, RED)
-        text5 = font4.render("She'll be annoyed by my complaints.", True, RED)
+        #text4 = font4.render("Then she'll be really offended.", True, RED)  #DELETE
+        #text5 = font4.render("She'll be annoyed by my complaints.", True, RED) #DELETE
+        text4 = font4.render("I don't want her to think I'm stupid,", True, RED)
         text6 = font4.render("People with anxiety tend to worry about small concerns and", True, BLUE)
         text7 = font4.render("amplify the impact of them in their mind. Try to understand", True, BLUE)
-        text8 = font4.render("where they are coming from without being disparaging", True, BLUE)
-        text9 = font4.render("towards them.", True, BLUE)
+        text8 = font4.render("where they are coming from without being belittling them", True, BLUE)
+        #text9 = font4.render("towards them.", True, BLUE) #DELETE
         screen.blit(text1, (25, 30))
         screen.blit(text10,(25, 55))
         screen.blit(text6, (25, 100))
         screen.blit(text7, (25, 125))
         screen.blit(text8, (25, 150))
-        screen.blit(text9, (25, 175))
+        #screen.blit(text9, (25, 175))
         screen.blit(text2, (100, 224))
         screen.blit(text3, (235, 294))    
         screen.blit(text4, (275, 330))
-        screen.blit(text5, (70, 410))
+        #screen.blit(text5, (70, 410))
         pygame.display.flip()
         
     screen.fill(BLACK)
@@ -301,11 +304,17 @@ while running:
         drawrect(170,280)
         label=myfont.render("Next", False, WHITE)
         screen.blit(label, (30, 292))
-        #text1 = font2.render("ENCOURAGEMENT FROM RORY", True, WHITE)
-        #text2 = font4.render("TIPS", True, WHITE)
-        #screen.blit(text1, (25, 30))
-        #screen.blit(text2, (25,
+        text1 = font2.render('''"He's just upset you're doing better than him in math,"''', True, WHITE)
+        text2 = font2.render('''Rory murmured, glaring at Jordan. "You'll do great, I''', True, WHITE)
+        text3 = font2.render('''believe in you." You relax slightly but still don't''', True, WHITE)
+        text4 = font2.render("fully believe her.", True, WHITE)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        screen.blit(text3, (25, 80))
+        screen.blit(text4, (25, 105))
         pygame.display.flip()
+
+    #================ INSERT GAME???? ====================
 
     screen.fill(BLACK)
 
@@ -323,20 +332,28 @@ while running:
         screen.blit(label, (30, 292))
         text1 = font2.render("You walk into the classroom. The quiz is on your desk.", True, WHITE)
         text2 = font2.render("Your mind goes blank as you read the sheet. You feel", True, WHITE)
-        text3 = font2.render("extremely nervous.", True, WHITE)
-        text4 = font4.render("I know all this but still can't do it.", True, RED)
-        text5 = font4.render("I didn't study enough,", True, RED)
-        text6 = font4.render("Students with generalized anxiety tend to be perfectionists", True, BLUE)
-        text7 = font4.render("and spend excessive time studying. It's important to provide", True, BLUE)
-        text8 = font4.render("comfort and reassurance about their performance.", True, BLUE)
+        text3 = font2.render("extremely nervous, second-guessing yourself and", True, WHITE)
+        text9 = font2.render("changing answers", True, WHITE)
+        text4 = font4.render("What will my parents think?", True, RED)
+        text5 = font4.render("I should have studied more, I'm going to fail.", True, RED)
+        text10 = font4.render("I'm going to end up homeless on the street", True, RED) 
+        text6 = font4.render("People with generalized anxiety tend to be perfectionists", True, BLUE)
+        text7 = font4.render("and spend excessive time studying. However, it can cause", True, BLUE)
+        text11 = font4.render("stress, leading to procrastination and lack of", True, BLUE)
+        text12 = font4.render("motivation. It's important to provide reassurance about", True, BLUE)
+        text8 = font4.render("their performance.", True, BLUE)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
+        screen.blit(text9, (25, 105)) #IS THE SPACING FOR THIS AND THE NEXT FIVE OKAY? 
         screen.blit(text6, (25, 195))
         screen.blit(text7, (25, 220))
-        screen.blit(text8, (25, 245))
+        screen.blit(text11, (25, 245))
+        screen.blit(text12, (25, 270))
+        screen.blit(text8, (25, 295))
         #screen.blit(text3, (
         #screen.blit(text4, (
+        #screen.blit(text10, (
         pygame.display.flip()
 
 
@@ -411,12 +428,14 @@ while running:
         screen.blit(label, (30, 292))                  
         text1 = font2.render("You've just been with Rory so far, but now she's", True, WHITE)
         text2 = font2.render("going to the bathroom, leaving you by yourself.", True, WHITE)
-        text5 = font2.render("You move to the corner as you wait for Rory.", True, WHITE)
+        text5 = font2.render("You move to the an isolated part of the room", True, WHITE)
+        text6 = font2.render("as you wait for Rory.", True, WHITE)
         text3 = font4.render("I don't want to stand out.", True, RED)
         text4 = font4.render("They'll think I'm a loser.", True, RED)
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text5, (25, 80))
+        screen.blit(text6, (25, 105))
         # screen.blit(text3, (
         # screen.blit(text4, (
         pygame.display.flip()
@@ -443,8 +462,8 @@ while running:
         label = myfont.render("Walk away", False, WHITE)
         screen.blit(label, (30, 362))
         text1 = font2.render("Someone walks up to you and greets you. She seems", True, WHITE)
-        text2 = font2.render("friendly. You start to feel flustered.", True, WHITE)
-        text3 = font2.render("Do you...", True, WHITE)
+        text2 = font2.render("friendly. You start to feel flustered, worried that", True, WHITE)
+        text3 = font2.render("you might offend them. Do you...", True, WHITE)
         text4 = font4.render("She's just talking to me because she pities me.", True, RED)
         text5 = font4.render("What if I accidentally offend her?", True, RED)
         screen.blit(text1, (25, 30))
@@ -459,7 +478,6 @@ while running:
     #15=8a, 16=8b, 17=8c, 18=8d, 19=9
     #15->19;  16->17/18;  17->18;  18->19;
     while part == 15:
-        event = pygame.event.poll()
         event = pygame.event.poll()
         if event.type == pygame.QUIT:
             running = False
@@ -479,13 +497,201 @@ while running:
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
-        #screen.blit(text4,
-        #screen.blit(text5
+        screen.blit(text4, (
+        screen.blit(text5,
+        pygame.display.update()
+
+    screen.fill(BLACK)
+
+    while part == 16: 
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 17 #MAKE sure it matches buttons
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 215 and event.pos[1] > 350 and event.pos[1] < 395:
+            print("You pressed the left mouse button at") 
+            print(event.pos)
+            part = 18
+        #FIX BUTTON PARAMETERS FOR SIZE AND CLICK AND CHECK PART 14 FOR THIS TOO  
+        drawrect(190, 280)
+        drawrect(170, 350)
+        label = myfont.render('Go look for Rory', False, WHITE)
+        screen.blit(label, (30, 292))
+        label = myfont.render("Stay where you are", False, WHITE)
+        screen.blit(label, (30, 362))
+        text1 = font2.render("You excuse yourself to the bathroom and walk away.", True, WHITE)
+        text2 = font2.render("You find a quiet spot to sit and wait for Rory.", True, WHITE)
+        text3 = font4.render("I hope no one notices me.", True, RED)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        #screen.blit(text3, (25, 
+        pygame.display.update()
+
+    screen.fill(BLACK)
+
+    while part == 17:
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 18
+        drawrect(170,280)
+        label = myfont.render("Next", False, WHITE)
+        screen.blit(label, (30, 292))
+        text1 = font2.render("You leave your spot to walk around the main room,", True, WHITE)
+        text2 = font2.render("looking to see if Rory was out, but you can't find her.", True, WHITE)
+        text3 = font2.render("You give up and return to your hidden spot.", True, WHITE)
+        text4 = font4.render("That was so awkward", True, RED)
+        text5 = font4.render("I hope no one saw.", True, RED)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        screen.blit(text3, (25, 80))
+        #screen.blit(text4, (25, 
+        #screen.blit(text5, (25,
+        pygame.display.update()
+
+    screen.fill(BLACK)
+
+    while part == 18:
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 19
+        drawrect(170,280)
+        label = myfont.render("Next", False, WHITE)
+        screen.blit(label, (30, 292))
+        text1 = font2.render("A girl from your English class approaches you. You", True, WHITE)
+        text2 = font2.render("don't know her well or feel comfortable with her, but", True, WHITE)
+        text3 = font2.render("she starts talking to you about the class, and you can't", True, WHITE)
+        text4 = font2.render("get away. you discover she's really nice after talking", True, WHITE)
+        text5 = font2.render("to her for a few minutes.", True, WHITE)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        screen.blit(text3, (25, 80))
+        screen.blit(text4, (25, 105))
+        screen.blit(text5, (25, 130))
         pygame.display.update()
         
-        
-        
+    
+    screen.fill(BLACK)
 
+    while part == 19:
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 20
+        drawrect(170,280)
+        label = myfont.render("Next", False, WHITE)
+        screen.blit(label, (30, 292))
+        text1 = font2.render("Rory finally returns, saying she ran into a friend", True, WHITE)
+        text2 = font2.render("of hers who invited her to play Truth or Dare. She", True, WHITE)
+        text3 = font2.render("asks you if you want to join. You start to shake when", True, WHITE)
+        text4 = font2.render("wyou realize you're the center of attention.", True, WHITE)
+        text5 = font4.render("Even though a lot of social anxiety is emotional, there", True, BLUE)
+        text6 = font4.render("are also physical aspects, such as a faster heartbeat or", True, BLUE)
+        text7 = font4.render("dizziness. The best thing you can do for someone with", True, BLUE)
+        text8 = font4.render("physical symptoms is be there and sympathize with them.", True, BLUE)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        screen.blit(text3, (25, 80))
+        screen.blit(text4, (25, 105))
+        #screen.blit(text5, (25, 
+        #screen.blit(text6, (25,
+        #screen.blit(text7, (25,
+        #screen.blit(text8, (25,
+        pygame.display.update()
+
+    screen.fill(BLACK)
+
+    while part == 20:
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 21
+        drawrect(170,280)
+        label = myfont.render("Next", False, WHITE)
+        screen.blit(label, (30, 292))
+        text1 = font2.render("You hear yourself agree--you don't want to seem", True, WHITE)
+        text2 = font2.render("nervous and join under pressure--but you regret your", True, WHITE)
+        text3 = font2.render("decision instantly.", True, WHITE)
+        text4 = font4.render("I can't believe I said yes.", True, RED)
+        text5 = font4.render("I never should have done this.", True, RED)
+        text6 = font4.render("Everyone will think I'm a freak.", True, RED)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        screen.blit(text3, (25, 80))
+        #screen.blit(text4, (25, 
+        #screen.blit(text5, (25, 
+        #screen.blit(text6, (25,
+        pygame.display.update()
+
+    screen.fill(BLACK)
+
+    while part == 21: 
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 22
+        drawrect(170,280)
+        label = myfont.render("End", False, WHITE)
+        screen.blit(label, (30, 292))
+        text1 = font2.render("The game of truth or dare has ended. Rory says to,", True, WHITE)
+        text2 = font2.render('''you, "I know this wasn't easy for you, but thank you"''', True, WHITE)
+        text3 = font2.render('''for going out of your comfort zone. It means a lot to''', True, WHITE)
+        text4 = font2.render('''me that you could come. Everyone thought you were fun''', True, WHITE)
+        text5 = font2.render('''to talk to, and they felt comfortable with you."''', True, WHITE)
+        text6 = font2.render("I guess tonight could have been worse.", True, RED)
+        screen.blit(text1, (25, 30))
+        screen.blit(text2, (25, 55))
+        screen.blit(text3, (25, 80))
+        screen.blit(text4, (25, 105))
+        screen.blit(text5, (25, 130))
+        #screen.blit(text6, (25,
+        pygame.display.update()
+
+
+    screen.fill(BLACK) 
+
+
+    while part == 22: 
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            running = False
+            part = 0
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT and event.pos[0] > 25 and event.pos[0] < 195 and event.pos[1] > 280 and event.pos[1] < 325:
+            print("You pressed the left mouse button at")
+            print(event.pos)
+            part = 1 
+        drawrect(170,280)
+        label = myfont.render("End", False, WHITE)
+        screen.blit(label, (30, 292))
+        #DO THIS
+        text1 = font3.render("CREDITS AND SOURCES AND RESOURCES") #include link to a tinyurl with list of links so people can check it out?
+        screen.blit(text1, (25, 30))
+        pygame.display.update()
 
 
 
@@ -498,4 +704,3 @@ while running:
     
 
 pygame.quit()
-
