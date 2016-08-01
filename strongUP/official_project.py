@@ -346,11 +346,11 @@ while running:
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
         screen.blit(text9, (25, 105)) #IS THE SPACING FOR THIS AND THE NEXT FIVE OKAY? 
-        screen.blit(text6, (25, 150))
-        screen.blit(text7, (25, 175))
-        screen.blit(text11, (25, 200))
-        screen.blit(text12, (25, 225))
-        screen.blit(text8, (25, 250))
+        screen.blit(text6, (25, 145))
+        screen.blit(text7, (25, 170))
+        screen.blit(text11, (25, 195))
+        screen.blit(text12, (25, 220))
+        screen.blit(text8, (25, 245))
         #screen.blit(text3, (
         #screen.blit(text4, (
         #screen.blit(text10, (
@@ -553,8 +553,8 @@ while running:
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
-        #screen.blit(text4, (25, 
-        #screen.blit(text5, (25,
+        screen.blit(text4, (160, 195))   
+        screen.blit(text5, (346, 295))
         pygame.display.update()
 
     screen.fill(BLACK)
