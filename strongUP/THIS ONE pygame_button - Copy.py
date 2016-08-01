@@ -518,7 +518,7 @@ while running:
             part = 18
         #FIX BUTTON PARAMETERS FOR SIZE AND CLICK AND CHECK PART 14 FOR THIS TOO  
         drawrect(190, 280)
-        drawrect(170, 350)
+        drawrect(190, 350)
         label = myfont.render('Go look for Rory', False, WHITE)
         screen.blit(label, (30, 292))
         label = myfont.render("Stay where you are", False, WHITE)
