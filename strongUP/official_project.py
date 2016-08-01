@@ -639,9 +639,9 @@ while running:
         screen.blit(text1, (25, 30))
         screen.blit(text2, (25, 55))
         screen.blit(text3, (25, 80))
-        #screen.blit(text4, (25, 
-        #screen.blit(text5, (25, 
-        #screen.blit(text6, (25,
+        screen.blit(text4, (220, 310)) 
+        screen.blit(text5, (350, 280)) 
+        screen.blit(text6, (120, 390))
         pygame.display.update()
 
     screen.fill(BLACK)
